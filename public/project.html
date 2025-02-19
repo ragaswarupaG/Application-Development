@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <script src="js/project.js"></script>
+    <link rel="stylesheet" href="css/mainpage.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/17679a8283.js" crossorigin="anonymous"></script>
+    
+</head>
+    <body onload="loadProductData()">
+        <div class="header">
+            <div class="shop_name">
+                <img src="images/tplogo.png" alt="">
+            </div >
+
+            <div class="header_icons">
+            <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-user" ></i>
+            <i class="fa-solid fa-circle-info"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        </div>
+
+
+
+        <div class="searchContainer">
+            <span class="search-icon material-symbols-outlined">search</span>
+            <input type="search" placeholder="Search" class="search_bar">
+        </div>
+    
+    
+<div class="insert_data_button">
+            <button class="insert_data" onclick="insertData()">Insert Product?</button>
+        </div>
+
+        <div class="page_title">Products</div>
+
+        <div class="sorting-methods">
+                <button class="sorting-button">
+                    Latest
+                </button>
+
+                <button class="sorting-button">
+                    Top sales
+                </button>
+
+                <select id="dropdown">
+                    <option disabled selected >Price</option>
+
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                </select>
+        </div>
+
+
+    <div class="products_display" id="dynamicProductDataList">
+
+
+        <div class="product"   id="image">
+            <img src="images/blue.png" alt="">
+
+            <button id="test">test</button>
+            <h3 id="item_name">name</h6>
+            <h3 id="item_price">price</h6>
+        </div>
+
+
+        <div class="product" id="image">
+            <img src="images/blue.png" alt="">
+
+            <button id="test">test</button>
+            <h3 id="item_name">name</h6>
+            <h3 id="item_price">price</h6>
+        </div>
+
+
+
+        <div class="product"   id="image">
+            <img src="images/blue.png" alt="">
+
+            <button id="test">test</button>
+            <h3 id="item_name">name</h3>
+            <h3 id="item_price">price</h3>
+        </div>
+
+    </div>
+</body>
+</html>

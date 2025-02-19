@@ -1,0 +1,15 @@
+{
+  "name": "adev_project2",
+  "version": "1.0.0",
+  "description": "adev project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raga",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.7.1"
+  }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Product</title>
+    <script src="js/project.js"></script>
+    <link rel="stylesheet" href="css/insert.css">
+
+</head>
+<body>
+    <img src="images/tplogo.png" alt="" class="logo">
+
+
+    <div class="insert_here">
+        
+        <div id="heading">
+        Insert new product?
+        </div>
+
+
+        <div class="form">
+            <form action="javascript:insertData()">
+        
+
+
+        <label for="insertName">Product name</label><br>
+        <input type="text" id="insertName"      class="input"      required><br>
+        <br>
+
+
+        <label for="insertDescribe">Product description</label><br>
+        <input type="text" id="insertDescribe" class="input"       required><br>
+        <br>
+
+
+
+
+
+        <label for="insertPrice">Product price</label><br>
+        <input type="number" id="insertPrice" min="0" max="1000000"  step="0.01"  class="input" required> <br>
+        <br>
+
+
+        <label for="insertCatId">Product category</label><br>
+
+        <select name="cat_id" id="insertCatId" onload="loadCategoryData()">
+            <option value="1">Home Appliances</option>
+            <option value="2">Women's Apparel</option>
+            <option value="3">Hobbies & Books</option>
+            <option value="4">Men's Apparel</option>
+          </select>
+          <br>
+          <br>
+          <label for="insertPicture">Product picture URL</label><br>
+          <input type="text" id="insertPicture"  class="input"  required><br>
+      <br>
+    <div class="button">
+      <button type="submit">Submit</button>
+    </form>
+
+
+    </div>
+    </div>
+    </div>
+
+
+
+
+   
+</body>
+</html>
+
